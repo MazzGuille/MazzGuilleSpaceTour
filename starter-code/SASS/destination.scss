@@ -2,118 +2,187 @@
 @import "variables";
 @import "mixins";
 @import "functions";
-@import 'nav';
+@import "nav";
 
-
-
-.body-destination{
-    background-image: url(/starter-code/assets/DESTINATION/background-destination-mobile.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 1rem;
-    color: $light;
+.body-destination {
+  background-image: url(/starter-code/assets/DESTINATION/background-destination-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 1rem;
+  color: $light;
 }
 
 /* NAV------------------------------------------------------ */
-.navagation-container{
-    position: fixed;
-    top: 0;
+.navagation-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  padding: 1rem;
+}
+
+hr {
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+
+  span{
+    color: $light;
+    opacity: 0.8;
+  }
+
+}
+
+/* ------------MOON, MARS, EUROPA, TITAN STARTS------------ */
+.moon,
+.mars,
+.europa,
+.titan {
+  margin-top: 15%;
+  @include flex-center(column, 0);
+}
+
+.moon-top,
+.mars-top,
+.europa-top,
+.titan-top {
+  @include flex-center(column, 2rem);
+  width: 80%;
+  border-bottom: 0.1rem solid rgba($color: $light, $alpha: 0.3);
+
+  .moon-heading {
+    @include flex-center(row, 2rem);
     width: 100%;
-    height: 10vh;
-    padding: 1rem;
-}
+    font-family: $barlow;
+    font-size: $fs-h5;
+    text-transform: uppercase;
+    font-weight: $fw-light;
 
-hr{
-    opacity: 0.5;
-}
-
-/* ------------MOON STARTS------------ */
-.moon, .mars, .europa, .titan{
-    margin-top: 15%;
-    @include flex-center(column, 0);
-}
-
-.moon-top, .mars-top, .europa-top, .titan-top{
-    @include flex-center(column, 2rem);
-    width: 80%;
-    border-bottom: .1rem solid rgba($color: $light, $alpha: .3);
-
-    .moon-heading{
-        @include flex-center(row, 2rem);
-        width: 100%;
-        font-family: $barlow;
-        font-size: $fs-h5;
-        text-transform: uppercase;
-        font-weight: $fw-light;
-
-            .num{
-                opacity: .5;
-            }
+    .num {
+      opacity: 0.5;
     }
+  }
 
-    .moon-img, .mars-img, .europa-img, .titan-img{
-        width: 50%;
+  .moon-img,
+  .mars-img,
+  .europa-img,
+  .titan-img {
+    width: 50%;
 
-        img{
-            width: 100%;
-        }
+    img {
+      width: 100%;
     }
+  }
 
-    .dest-current-position{
+  .dest-current-position {
     @include flex-around(row, 0rem);
     width: 100%;
     font-family: $barlow;
     font-size: $fs-subhead-2;
     text-transform: uppercase;
-    opacity: .5;
+    opacity: 0.5;
     cursor: pointer;
-    }
+  }
 
-    .moon-title, .mars-title, .europa-title, .titan-title{
-        text-align: center;
-        font-family: $bellefair;
-        text-transform: uppercase;
-        font-size: $fs-h2;
-        font-weight: $fw-regular;
-        letter-spacing: $cs-txt;
-    }
+  .moon-title,
+  .mars-title,
+  .europa-title,
+  .titan-title {
+    text-align: center;
+    font-family: $bellefair;
+    text-transform: uppercase;
+    font-size: $fs-h2;
+    font-weight: $fw-regular;
+    letter-spacing: $cs-txt;
+  }
 
-    .moon-txt, .mars-txt, .europa-txt, .titan-txt{
-        text-align: center;
-        font-family: $barlow;
-        font-size: $fs-body;
-        opacity: .5;
-        margin-bottom: 3rem;
-    }
+  .moon-txt,
+  .mars-txt,
+  .europa-txt,
+  .titan-txt {
+    text-align: center;
+    font-family: $barlow;
+    font-size: $fs-body;
+    opacity: 0.5;
+    margin-bottom: 3rem;
+  }
 }
 
-.moon-bot, .mars-bot, .europa-bot, .titan-bot{
+.moon-bot,
+.mars-bot,
+.europa-bot,
+.titan-bot {
+  @include flex-center(column, 1rem);
+  width: 80%;
+  margin-top: 3rem;
+
+  .moon-dist,
+  .moon-time,
+  .mars-dist,
+  .mars-time,
+  .europa-dist,
+  .europa-time,
+  .titan-dist,
+  .titan-time {
+    @include flex-center(column, 0rem);
+    width: 100%;
+
+    p {
+      font-family: $barlow;
+      font-size: $fs-subhead-2;
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+
+    span {
+      text-align: center;
+      font-family: $bellefair;
+      text-transform: uppercase;
+      font-size: $fs-subhead-1;
+      font-weight: $fw-regular;
+    }
+  }
+}
+
+/* ------------MOON, MARS, EUROPA, TITAN  ENDS------------ */
+
+/* ------------BTN STARTS------------ */
+.home-btn-container {
     @include flex-center(column, 1rem);
-    width: 80%;
-    margin-top: 3rem;
-
-    .moon-dist, .moon-time, .mars-dist, .mars-time, .europa-dist, .europa-time, .titan-dist, .titan-time{
-        @include flex-center(column, 0rem);
-        width: 100%;
-
-        p{
-            font-family: $barlow;
-            font-size: $fs-subhead-2;
-            opacity: .5;
-            text-transform: uppercase;
-        }
-
-        span{
-        text-align: center;
-        font-family: $bellefair;
-        text-transform: uppercase;
-        font-size: $fs-subhead-1;
-        font-weight: $fw-regular;
-        }
-
+    margin-top: 7rem;
+    
+  
+    .home-btn {
+      width: 13rem;
+      height: 13rem;
+      border-radius: 50%;
+      background-color: $light;
+      font-family: $bellefair;
+      text-transform: uppercase;
+      font-size: $fs-nav;
+      cursor: pointer;
+      border: .15rem solid $primary;
     }
-}
+  }
+  
+  .shadow-home{
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    background-color: red;
+    top: 70.75%;
+    left: 33.75%;
+    z-index: -1;  
+    display: none;
+  
+    /* para los media query de escritorio estas son las medidas:
+    top: 58.8%;
+    left: 48.4%; */
+  }
 
-/* ------------MOON ENDS------------ */
+  /* ------------BTN ENDS------------ */
