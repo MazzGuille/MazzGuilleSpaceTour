@@ -10,18 +10,61 @@ $light: #ffffff;
 $bellefair: 'Bellefair', serif;
 $barlow: 'Barlow Condensed', sans-serif;
 
+/* --------------FONT WEIGHT-------------- */
+$fw-bold: 700;
+$fw-regular: 400;
+$fw-light: 300;
+
+/* ------------------------------------------DESKTOP------------------------------------------ */
+
+/* ------FONT-SIZE----- */
+$fs-dsk-h1: 15rem;
+$fs-dsk-h2: 10rem;
+$fs-dsk-h3: 5.6rem;
+$fs-dsk-h4: 3.2rem;
+$fs-dsk-h5: 2.8rem;
+$fs-dsk-subhead-1: 2.8rem;
+$fs-dsk-subhead-2: 1.4rem;
+$fs-dsk-nav: 1.6rem;
+$fs-dsk-body: 1.8rem;
+
+/* --------CHARACHTER SPACING-------- */
+$cs-dsk-h5: .475rem;
+$cs-dsk-sh-2: .235rem;
+$cs-dsk-txt: .270rem;
+
+/* ------------------------------------------TABLET------------------------------------------ */
+
 /* ------FONT-size----- */
-$fs-h1: 9rem;
-$fs-h2: 10rem;
-$fs-h3: 5.6rem;
-$fs-h4: 3.2rem;
+$fs-tbl-h1: 10rem;
+$fs-tbl-h2: 8rem;
+$fs-tbl-h3: 4rem;
+$fs-tbl-h4: 2.4rem;
+$fs-tbl-h5: 2rem;
+$fs-tbl-subhead-1: 2rem;
+$fs-tbl-subhead-2: 1.4rem;
+$fs-tbl-nav: 1.6rem;
+$fs-tbl-body: 1.6rem;
+
+/* --------CHARACHTER SPACING-------- */
+$cs-tbl-h5: .338rem;
+$cs-tbl-sh-2: .235rem;
+$cs-tbl-txt: .270rem;
+
+/* ------------------------------------------MOBILE------------------------------------------ */
+
+/* ------FONT-size----- */
+$fs-h1: 8rem;
+$fs-h2: 5.6rem;
+$fs-h3: 2.4rem;
+$fs-h4: 1.6rem;
 $fs-h5: 1.6rem;
 $fs-subhead-1: 2.8rem;
 $fs-subhead-2: 1.4rem;
 $fs-nav: 2rem;
-$fs-body: 1.6rem;
+$fs-body: 1.5rem;
 
 /* --------CHARACHTER SPACING-------- */
-$cs-h5: .475rem;
+$cs-h5: .270rem;
 $cs-sh-2: .235rem;
 $cs-txt: .270rem;

@@ -3,35 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <!-- ----CSS LINK---- -->
+  <link rel="stylesheet" href="/starter-code/SASS/destination.css">
+  <!-- -------JS LINKS------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script defer src="/starter-code/JS/transition.js"></script>
+  <script defer src="/starter-code/JS/animations.js"></script>
+  <script defer src="/starter-code/JS/nav.js"></script>
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="body-destination">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <!-- -----------NAV MENU START------------ -->
+  <div class="navagation-container">
+    <header class="header-mobile">
+      <img src="/starter-code/assets/SHARED/logo.svg" alt="">
+      <img class="ham" src="/starter-code/assets/SHARED/icon-hamburger.svg" alt="">
+    </header>
+    <div class="menu-container hide">
+      <!-- <img class="close" src="/starter-code/assets/shared/icon-close.svg" alt=""> -->
+      <ul class="link-container">
+        <a href="/index.html">
+          <li>00 Home</li>
+        </a>
+        <a href="/starter-code/DESTINATION/destination-moon.html">
+          <li>01 Destination</li>
+        </a>
+        <a href="/starter-code/CREW/crew-commander.html">
+          <li>02 Crew</li>
+        </a>
+        <a href="/starter-code/TECHNOLOGY/technology-vehicle.html">
+          <li>03 Technology</li>
+        </a>
+      </ul>
+    </div>
+  </div>
+ <!-- -----------NAV MENU END------------ -->
 
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+<!-- ------------MOON STARTS------------ --> 
+<section class="moon">  
+    <div class="moon-top">
+      <div class="moon-heading"><span class="num">01</span> <span>Pick your destination</span></div>
+      <div class="moon-img"><img src="/starter-code/assets/DESTINATION/image-moon.webp" alt="image of the moon"></div>
+      <div class="dest-current-position">
+        <span>Moon</span>
+        <span>Mars</span>
+        <span>Europa</span>
+        <span>Titan</span>
+      </div>
+      <h2 class="moon-title">Moon</h2>
+      <div class="moon-txt">
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+        regain perspective and come back refreshed. While you’re there, take in some history
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </div>
+    </div>  
+    <div class="moon-bot">
+      <div class="moon-dist">
+        <p>Avg. distance</p>
+        <span>384,400 km</span>
+      </div>
+      <div class="moon-time">
+        <p>Est. travel time</p>
+        <span>3 days</span>
+      </div>
+    </div>
+</section>
+<!-- ------------MOON ENDS------------ -->
+<br><br><br>
+<hr>
+<br><br>
+<!-- ------------MARS STARTS------------ -->
+<section class="mars"> 
+  <div class="mars-top">
+    <div class="mars-img"><img src="/starter-code/assets/DESTINATION/image-mars.webp" alt="image of mars"></div>    
+    <div class="dest-current-position">
+      <span>Moon</span>
+      <span>Mars</span>
+      <span>Europa</span>
+      <span>Titan</span>
+    </div>
+    
+      <h2 class="mars-title">Mars</h2>
+    
+      <div class="mars-txt">
+        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
+        the tallest planetary mountain in our solar system. It’s two and a half times
+        the size of Everest!
+      </div>
+  </div>
+  
+    <div class="mars-bot">
+      <div class="mars-dist">
+        <p>Avg. distance</p>
+        <span>225 mil. km</span>
+      </div>
+      <div class="mars-time">
+        <p>Est. travel time</p>
+        <span>9 months</span>
+      </div>
+    </div>
+</section>
+  <!-- ------------MARS ENDS------------ -->
+  <br><br><br>
+<hr>
+<br><br>
+<!-- ------------EUROPA STARTS------------ -->
+<section class="europa"> 
+  <div class="europa-top">
+    <div class="europa-img"><img src="/starter-code/assets/DESTINATION/image-europa.webp" alt="image of europa"></div>    
+    <div class="dest-current-position">
+      <span>Moon</span>
+      <span>Mars</span>
+      <span>Europa</span>
+      <span>Titan</span>
+    </div>
+    
+      <h2 class="europa-title">Europa</h2>
+    
+      <div class="europa-txt">
+        The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+  ice skating, curling, hockey, or simple relaxation in your snug 
+  wintery cabin.
+      </div>
+  </div>
+  
+    <div class="europa-bot">
+      <div class="europa-dist">
+        <p>Avg. distance</p>
+        <span>628 mil. km</span>
+      </div>
+      <div class="europa-time">
+        <p>Est. travel time</p>
+        <span>3 years</span>
+      </div>
+    </div>
+</section>
+  <!-- ------------EUROPA ENDS------------ -->
+  <br><br><br>
+<hr>
+<br><br>
+<!-- ------------TITAN STARTS------------ -->
+<section class="titan"> 
+  <div class="titan-top">
+    <div class="titan-img"><img src="/starter-code/assets/DESTINATION/image-titan.webp" alt="image of titan"></div>    
+    <div class="dest-current-position">
+      <span>Moon</span>
+      <span>Mars</span>
+      <span>Europa</span>
+      <span>Titan</span>
+    </div>
+    
+      <h2 class="titan-title">Titan</h2>
+    
+      <div class="titan-txt">
+        The only moon known to have a dense atmosphere other than Earth, Titan 
+  is a home away from home (just a few hundred degrees colder!). As a 
+  bonus, you get striking views of the Rings of Saturn.
+      </div>
+  </div>
+  
+    <div class="titan-bot">
+      <div class="titan-dist">
+        <p>Avg. distance</p>
+        <span>1.6 bil. km</span>
+      </div>
+      <div class="titan-time">
+        <p>Est. travel time</p>
+        <span>7 Years</span>
+      </div>
+    </div>
+</section>
+  <!-- ------------TITAN ENDS------------ -->
 </body>
 </html>
