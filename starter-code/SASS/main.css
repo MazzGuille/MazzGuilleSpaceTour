@@ -194,6 +194,20 @@ select {
 }
 
 .home-main h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.6rem;
   opacity: 0.6;
@@ -201,6 +215,16 @@ select {
   font-weight: 100;
   margin-top: 10%;
   text-transform: uppercase;
+}
+
+.home-main h5 div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.home-main h5 div p {
+  margin: 0;
 }
 
 .home-main h1 {
@@ -243,8 +267,6 @@ select {
   font-family: "Bellefair", serif;
   text-transform: uppercase;
   font-size: 2rem;
-  /*  display: grid;
-    place-content: center; */
   cursor: pointer;
   border: 0.15rem solid #d0d6f9;
 }
@@ -258,6 +280,7 @@ select {
   top: 70.75%;
   left: 33.75%;
   z-index: -1;
+  display: none;
   /* para los media query de escritorio estas son las medidas:
   top: 58.8%;
   left: 48.4%; */
