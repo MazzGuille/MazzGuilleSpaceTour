@@ -8,9 +8,10 @@
   <!-- ----CSS LINK---- -->
   <link rel="stylesheet" href="/starter-code/SASS/destination.css">
   <!-- -------JS LINKS------- -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
   <script defer src="/starter-code/JS/transition.js"></script>
-  <script defer src="/starter-code/JS/animations.js"></script>
+  <script defer src="/starter-code/JS/dest-animations.js"></script>
   <script defer src="/starter-code/JS/nav.js"></script>
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -46,9 +47,11 @@
   <!-- ------------MOON STARTS------------ -->
   <section id="moon" class="moon">
     <div class="moon-top">
-      <div class="moon-heading"><span class="num">01</span> <span>Pick your destination</span></div>
+      <div class="moon-heading">
+        <span class="num">01</span> <span>Pick your destination</span>
+      </div>
       <div class="moon-img"><img src="/starter-code/assets/DESTINATION/image-moon.webp" alt="image of the moon"></div>
-      <div class="dest-current-position">
+      <div class="dest-current-position pos-moon">
         <a href="#moon"><span>Moon</span></a>
         <a href="#mars"><span>Mars</span></a>
         <a href="#europa"><span>Europa</span></a>

@@ -1,7 +1,7 @@
 /* ---------NAV BAR--------- */
 
 .ham {
-    z-index: 11;
+    z-index: 110;
     margin-right: 10%
   }
   
@@ -11,6 +11,7 @@
   
   .menu-container {
     @include flex-start-x(column, 1rem);
+    z-index: 100;
     height: 100vh;
     width: 70%;
     position: absolute;
@@ -18,6 +19,7 @@
     top: 0;
     right: 0;
     background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(255,255,255,1));
+    
   
     .link-container {
       @include flex-start-y(column, 2rem);
@@ -27,7 +29,7 @@
         text-decoration: none;
         color: $primary;
         font-family: $barlow;
-        font-size: $fs-h5;
+        font-size: $fs-nav;
         letter-spacing: $cs-txt;
       }
     }
