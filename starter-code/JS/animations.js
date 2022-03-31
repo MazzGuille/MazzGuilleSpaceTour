@@ -21,7 +21,7 @@ homeBtn.addEventListener('mouseleave', () => {
 
 /* ----------------HOME H5/H1----------------- */
 
-const home = gsap.timeline({defaults: {duration: .3}});
+const home = gsap.timeline({defaults: {duration: .25}});
 home
 .from('.so-s',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
 .from('.so-o',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
@@ -29,23 +29,23 @@ home
 .from('.you-y',{ y: '-500%', opacity: 0, ease: 'elastic.out(3, .5)'})
 .from('.you-o',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
 .from('.you-u',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.w-w',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.w-a',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.w-n',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.w-t',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.to-t',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.to-o',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.tr-t',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.tr-r',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.tr-a',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.tr-v',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.tr-e',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.tr-l',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.t-t',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
-.from('.t-o',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'})
+.from('.w-w',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.05')
+.from('.w-a',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.05')
+.from('.w-n',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.05')
+.from('.w-t',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.05')
+.from('.to-t',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.1')
+.from('.to-o',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.1')
+.from('.tr-t',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.1')
+.from('.tr-r',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.1')
+.from('.tr-a',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.1')
+.from('.tr-v',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.2')
+.from('.tr-e',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.2')
+.from('.tr-l',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.2')
+.from('.t-t',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.2')
+.from('.t-o',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.2')
 .from('.home-h1', { duration: 3, opacity: '0', ease: 'power1', transform: 'scale(.1)'})
 .from('.home-txt',{duration: '3', opacity: 0, ease: "slow(0.7, 0.7, false)"})
-;
+.from('.home-btn', { duration: 3, scale: 0},'-=2');
 
 
 

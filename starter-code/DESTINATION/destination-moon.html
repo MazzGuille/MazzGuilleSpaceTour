@@ -8,8 +8,8 @@
   <!-- ----CSS LINK---- -->
   <link rel="stylesheet" href="/starter-code/SASS/destination.css">
   <!-- -------JS LINKS------- -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
   <script defer src="/starter-code/JS/transition.js"></script>
   <script defer src="/starter-code/JS/dest-animations.js"></script>
   <script defer src="/starter-code/JS/nav.js"></script>
@@ -17,6 +17,7 @@
 </head>
 
 <body class="body-destination">
+  
 
   <!-- -----------NAV MENU START------------ -->
   <div class="navagation-container">
@@ -83,7 +84,7 @@
   <section id="mars" class="mars">
     <div class="mars-top">
       <div class="mars-img"><img src="/starter-code/assets/DESTINATION/image-mars.webp" alt="image of mars"></div>
-      <div class="dest-current-position">
+      <div class="mars-anim dest-current-position">
         <a href="#moon"><span>Moon</span></a>
         <a href="#mars"><span>Mars</span></a>
         <a href="#europa"><span>Europa</span></a>
@@ -118,7 +119,7 @@
   <section id="europa" class="europa">
     <div class="europa-top">
       <div class="europa-img"><img src="/starter-code/assets/DESTINATION/image-europa.webp" alt="image of europa"></div>
-      <div class="dest-current-position">
+      <div class="europa-anim dest-current-position">
         <a href="#moon"><span>Moon</span></a>
         <a href="#mars"><span>Mars</span></a>
         <a href="#europa"><span>Europa</span></a>
@@ -154,7 +155,7 @@
   <section id="titan" class="titan">
     <div class="titan-top">
       <div class="titan-img"><img src="/starter-code/assets/DESTINATION/image-titan.webp" alt="image of titan"></div>
-      <div class="dest-current-position">
+      <div class="titan-anim dest-current-position">
         <a href="#moon"><span>Moon</span></a>
         <a href="#mars"><span>Mars</span></a>
         <a href="#europa"><span>Europa</span></a>
