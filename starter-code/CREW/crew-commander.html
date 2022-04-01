@@ -1,27 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <!-- ----CSS LINK---- -->
+  <link rel="stylesheet" href="/starter-code/SASS/crew.css">
+  <!-- -------JS LINKS------- -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
+  <script defer src="/starter-code/JS/nav.js"></script>
+  <script defer src="/starter-code/JS/crew-animations.js"></script>
+  <script defer src="/starter-code/JS/transition.js"></script>
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="body-crew">
+ <!-- -----------NAV MENU START------------ -->
+ <div class="navagation-container">
+  <header class="header-mobile">
+    <img src="/starter-code/assets/SHARED/logo.svg" alt="">
+    <img class="ham" src="/starter-code/assets/SHARED/icon-hamburger.svg" alt="">
+  </header>
+  <div class="menu-container hide">
+    <!-- <img class="close" src="/starter-code/assets/shared/icon-close.svg" alt=""> -->
+    <ul class="link-container">
+      <a href="/index.html">
+        <li>00 Home</li>
+      </a>
+      <a href="/starter-code/DESTINATION/destination-moon.html">
+        <li>01 Destination</li>
+      </a>
+      <a href="/starter-code/CREW/crew-commander.html">
+        <li>02 Crew</li>
+      </a>
+      <a href="/starter-code/TECHNOLOGY/technology-vehicle.html">
+        <li>03 Technology</li>
+      </a>
+    </ul>
+  </div>
+</div>
+<!-- -----------NAV MENU END------------ -->
+<!-- -----------COMMANDER START------------ -->
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <section class="commander-container">
+    <h5 class="crew-title"><span>02</span> Meet your crew</h5>
+    <div class="commander-img">
+      <img src="/starter-code/assets/CREW/image-douglas-hurley.webp" alt="commander Douglas Hurley">
+    </div>
+    <div class="dot-container-commander">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>    
+    <div class="name-title-container-commander">
+      <div class="commander-title">Commander</div>
+      <div class="commander-name">Douglas Hurley</div>
+    </div>
+    <div class="commander-txt">
+      <p>
+        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+        and former NASA astronaut. He launched into space for the third time as
+        commander of Crew Dragon Demo-2.
+      </p>
+    </div>
+  </section>
+  <hr>
+  <!-- -----------COMMANDER END------------ -->
+  <!-- -----------SPECIALIST START------------ -->
 
-  02 Meet your crew
+  <section class="specialist-container">
+    <div class="specialist-img">
+      <img src="/starter-code/assets/CREW/image-mark-shuttleworth.webp" alt="commander Douglas Hurley">
+    </div>
+    <div class="dot-container-specialist">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>    
+    <div class="name-title-container-specialist">
+      <div class="specialist-title">Mission Specialist</div>
+      <div class="specialist-name">Mark Shuttleworth</div>
+    </div>
+    <div class="specialist-txt">
+      <p>
+        Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+  African to travel to space as a space tourist.
+      </p>
+    </div>
+  </section>
+  <hr>
+  <!-- -----------SPECIALIST END------------ -->
+  <!-- -----------PILOT START------------ -->
 
-  Commander
-  Douglas Hurley
+  <section class="pilot-container">
+    <div class="pilot-img">
+      <img src="/starter-code/assets/CREW/image-victor-glover.webp" alt="commander Douglas Hurley">
+    </div>
+    <div class="dot-container-pilot">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>    
+    <div class="name-title-container-pilot">
+      <div class="pilot-title">pilot</div>
+      <div class="pilot-name">Victor Glover</div>
+    </div>
+    <div class="pilot-txt">
+      <p>
+        Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+  International Space Station. Glover is a commander in the U.S. Navy where 
+  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+  station systems flight engineer. 
+      </p>
+    </div>
+  </section>
+  <hr>
+  <!-- -----------PILOT END------------ -->
+  <!-- -----------ENGINEER START------------ -->
 
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
+  <section class="engineer-container">
+    <div class="engineer-img">
+      <img src="/starter-code/assets/CREW/image-anousheh-ansari.webp" alt="commander Douglas Hurley">
+    </div>
+    <div class="dot-container-engineer">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>    
+    <div class="name-title-container-engineer">
+      <div class="engineer-title">Flight Engineer</div>
+      <div class="engineer-name">Anousheh Ansari</div>
+    </div>
+    <div class="engineer-txt">
+      <p>
+        Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+  fly to the ISS, and the first Iranian in space.
+      </p>
+    </div>
+  </section>
+  <hr>
+  <!-- -----------ENGINEER END------------ -->
 </body>
+
 </html>

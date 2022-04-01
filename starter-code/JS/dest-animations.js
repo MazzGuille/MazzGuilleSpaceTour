@@ -1,5 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
+/* -----------------------MOON GSAP----------------------- */
 const moon = gsap.timeline({ defaults: { duration: 3 } });
 moon
     .fromTo('.moon-heading', { opacity: 0, scale: 0, rotation: 720 }, { duration: 1, opacity: 1, scale: 1, rotation: 0 })
@@ -7,8 +9,6 @@ moon
     .from('.moon-img', { scale: 0, x: 300, ease: "power4.out" }, '-=1.5')
     .from('.moon-title', { opacity: 0 }, "-=2")
     .from('.moon-txt', { opacity: 0 }, '-=2');
-
-/* -----------------------MOON GSAP----------------------- */
 
 const moonTxt = gsap.timeline({
     scrollTrigger: {
@@ -23,8 +23,8 @@ moonTxt
     .from('.moon-dist', { duration: 3, opacity: 0 })
     .from('.moon-time', { duration: 3, opacity: 0 }, '-=1.5');
 
-/* ---------------------MARS GSAP--------------------- */
 
+/* ---------------------MARS GSAP--------------------- */
 gsap.from('.mars-img', {
     scrollTrigger: {
         trigger: '.mars-img',
@@ -102,6 +102,7 @@ europaBot
     .from('.europa-dist', { duration: 1.5, x: 45, opacity: 0 })
     .from('.europa-time', { duration: 1.5, x: -45, opacity: 0 });
 
+
 /* ---------------------TITAN GSAP--------------------- */
 gsap.from('.titan-img', {
     scrollTrigger: {
@@ -141,4 +142,4 @@ const titanBot = gsap.timeline({
 titanBot
     .from('.titan-dist', { duration: 1.5, x: 45, opacity: 0 })
     .from('.titan-time', { duration: 1.5, x: -45, opacity: 0 })
-    .from('.home-btn', { duration: 3, scale: 0});
+    .from('.home-btn', { duration: 3, scale: 0 });

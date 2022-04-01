@@ -1,5 +1,3 @@
-/* ----------------HOME---------------- */
-
 /* -----------------HOME BTN----------------- */
 const homeBtn = document.querySelector('.home-btn');
 const shadowHome = document.querySelector('.shadow-home');
@@ -14,10 +12,6 @@ homeBtn.addEventListener('mouseleave', () => {
     shadowHome.style.transform = 'scale(1)';
     shadowHome.style.transition = 'all 1s ease-in-out';
 });
-
-/* --------------------HOME TXT------------------- */
-
-
 
 /* ----------------HOME H5/H1----------------- */
 
@@ -44,7 +38,7 @@ home
 .from('.t-t',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.2')
 .from('.t-o',{ y: '-100%', opacity: 0, ease: 'elastic.out(3, .5)'},'-=.2')
 .from('.home-h1', { duration: 3, opacity: '0', ease: 'power1', transform: 'scale(.1)'})
-.from('.home-txt',{duration: '3', opacity: 0, ease: "slow(0.7, 0.7, false)"})
+.from('.home-txt',{duration: 3, opacity: 0, ease: "slow(0.7, 0.7, false)"})
 .from('.home-btn', { duration: 3, scale: 0},'-=2');
 
 
