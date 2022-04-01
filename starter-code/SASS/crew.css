@@ -255,10 +255,10 @@ hr {
   opacity: 0.5;
 }
 
-.commander-img,
-.specialist-img,
-.pilot-img,
-.engineer-img {
+.commander-img-container,
+.specialist-img-container,
+.pilot-img-container,
+.engineer-img-container {
   width: 80%;
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
   display: -ms-grid;
@@ -266,10 +266,10 @@ hr {
   place-content: center;
 }
 
-.commander-img img,
-.specialist-img img,
-.pilot-img img,
-.engineer-img img {
+.commander-img-container img,
+.specialist-img-container img,
+.pilot-img-container img,
+.engineer-img-container img {
   width: 17.712rem;
 }
 
@@ -317,7 +317,7 @@ hr {
   cursor: pointer;
 }
 
-.name-title-container-commmander,
+.name-title-container-commander,
 .name-title-container-specialist,
 .name-title-container-pilot,
 .name-title-container-engineer {
@@ -338,10 +338,10 @@ hr {
   width: 100%;
 }
 
-.name-title-container-commmander .commander-title,
-.name-title-container-commmander .specialist-title,
-.name-title-container-commmander .pilot-title,
-.name-title-container-commmander .engineer-title,
+.name-title-container-commander .commander-title,
+.name-title-container-commander .specialist-title,
+.name-title-container-commander .pilot-title,
+.name-title-container-commander .engineer-title,
 .name-title-container-specialist .commander-title,
 .name-title-container-specialist .specialist-title,
 .name-title-container-specialist .pilot-title,
@@ -361,10 +361,10 @@ hr {
   text-transform: uppercase;
 }
 
-.name-title-container-commmander .commander-name,
-.name-title-container-commmander .specialist-name,
-.name-title-container-commmander .pilot-name,
-.name-title-container-commmander .engineer-name,
+.name-title-container-commander .commander-name,
+.name-title-container-commander .specialist-name,
+.name-title-container-commander .pilot-name,
+.name-title-container-commander .engineer-name,
 .name-title-container-specialist .commander-name,
 .name-title-container-specialist .specialist-name,
 .name-title-container-specialist .pilot-name,
@@ -403,4 +403,52 @@ hr {
   text-align: center;
   opacity: 0.5;
 }
+
+/* ------------BTN STARTS------------ */
+.home-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  margin-top: 7rem;
+}
+
+.home-btn-container .home-btn {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 0.15rem solid #d0d6f9;
+}
+
+.shadow-home {
+  position: absolute;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  background-color: red;
+  top: 70.75%;
+  left: 33.75%;
+  z-index: -1;
+  display: none;
+  /* para los media query de escritorio estas son las medidas:
+    top: 58.8%;
+    left: 48.4%; */
+}
+
+/* ------------BTN ENDS------------ */
 /*# sourceMappingURL=crew.css.map */

@@ -62,10 +62,10 @@ hr {
   }
 }
 
-.commander-img,
-.specialist-img,
-.pilot-img,
-.engineer-img {
+.commander-img-container,
+.specialist-img-container,
+.pilot-img-container,
+.engineer-img-container {
   width: 80%;
   border-bottom: 0.1rem solid rgba($color: $light, $alpha: 0.3);
   display: grid;
@@ -99,7 +99,7 @@ hr {
   }
 }
 
-.name-title-container-commmander,
+.name-title-container-commander,
 .name-title-container-specialist,
 .name-title-container-pilot,
 .name-title-container-engineer {
@@ -144,3 +144,39 @@ hr {
     opacity: 0.5;
   }
 }
+
+/* ------------BTN STARTS------------ */
+.home-btn-container {
+  @include flex-center(column, 1rem);
+  margin-top: 7rem;
+
+  .home-btn {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background-color: $light;
+    font-family: $bellefair;
+    text-transform: uppercase;
+    font-size: $fs-nav;
+    cursor: pointer;
+    border: 0.15rem solid $primary;
+  }
+}
+
+.shadow-home {
+  position: absolute;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  background-color: red;
+  top: 70.75%;
+  left: 33.75%;
+  z-index: -1;
+  display: none;
+
+  /* para los media query de escritorio estas son las medidas:
+    top: 58.8%;
+    left: 48.4%; */
+}
+
+/* ------------BTN ENDS------------ */
