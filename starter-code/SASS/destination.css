@@ -4,8 +4,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -23,8 +22,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
 }
 
@@ -43,7 +42,8 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -66,19 +66,18 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     -webkit-animation-duration: 0.01ms !important;
             animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
             animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-
 /* --------------COLORS-------------- */
 /* -------------TYPOGRAPHY------------- */
 /* -----FONTS----- */
@@ -99,36 +98,18 @@ select {
 }
 
 .header-mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   gap: 1.5rem;
 }
 
 .menu-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   gap: 1rem;
   z-index: 100;
   height: 100vh;
@@ -137,28 +118,16 @@ select {
   z-index: 10;
   top: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
-  background-image: linear-gradient(to bottom, black, white);
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
 }
-
 .menu-container .link-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
   gap: 2rem;
   list-style: none;
 }
-
 .menu-container .link-container a {
   text-decoration: none;
   color: #d0d6f9;
@@ -200,7 +169,6 @@ hr {
 a {
   text-decoration: none;
 }
-
 a span {
   color: #ffffff;
   opacity: 0.8;
@@ -212,19 +180,10 @@ a span {
 .europa,
 .titan {
   margin-top: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 0;
 }
 
@@ -232,41 +191,22 @@ a span {
 .mars-top,
 .europa-top,
 .titan-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 2rem;
   width: 80%;
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
-
 .moon-top .moon-heading,
 .mars-top .moon-heading,
 .europa-top .moon-heading,
 .titan-top .moon-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   gap: 2rem;
   width: 100%;
   font-family: "Barlow Condensed", sans-serif;
@@ -274,14 +214,12 @@ a span {
   text-transform: uppercase;
   font-weight: 300;
 }
-
 .moon-top .moon-heading .num,
 .mars-top .moon-heading .num,
 .europa-top .moon-heading .num,
 .titan-top .moon-heading .num {
   opacity: 0.5;
 }
-
 .moon-top .moon-img,
 .moon-top .mars-img,
 .moon-top .europa-img,
@@ -300,7 +238,6 @@ a span {
 .titan-top .titan-img {
   width: 50%;
 }
-
 .moon-top .moon-img img,
 .moon-top .mars-img img,
 .moon-top .europa-img img,
@@ -319,23 +256,14 @@ a span {
 .titan-top .titan-img img {
   width: 100%;
 }
-
 .moon-top .dest-current-position,
 .mars-top .dest-current-position,
 .europa-top .dest-current-position,
 .titan-top .dest-current-position {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   gap: 0rem;
   width: 100%;
   font-family: "Barlow Condensed", sans-serif;
@@ -344,7 +272,6 @@ a span {
   opacity: 0.5;
   cursor: pointer;
 }
-
 .moon-top .moon-title,
 .moon-top .mars-title,
 .moon-top .europa-title,
@@ -368,7 +295,6 @@ a span {
   font-weight: 400;
   letter-spacing: 0.27rem;
 }
-
 .moon-top .moon-txt,
 .moon-top .mars-txt,
 .moon-top .europa-txt,
@@ -396,24 +322,14 @@ a span {
 .mars-bot,
 .europa-bot,
 .titan-bot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 1rem;
   width: 80%;
   margin-top: 3rem;
 }
-
 .moon-bot .moon-dist,
 .moon-bot .moon-time,
 .moon-bot .mars-dist,
@@ -446,23 +362,13 @@ a span {
 .titan-bot .europa-time,
 .titan-bot .titan-dist,
 .titan-bot .titan-time {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 0rem;
   width: 100%;
 }
-
 .moon-bot .moon-dist p,
 .moon-bot .moon-time p,
 .moon-bot .mars-dist p,
@@ -500,7 +406,6 @@ a span {
   opacity: 0.5;
   text-transform: uppercase;
 }
-
 .moon-bot .moon-dist span,
 .moon-bot .moon-time span,
 .moon-bot .mars-dist span,
@@ -543,23 +448,13 @@ a span {
 /* ------------MOON, MARS, EUROPA, TITAN  ENDS------------ */
 /* ------------BTN STARTS------------ */
 .home-btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 1rem;
   margin-top: 7rem;
 }
-
 .home-btn-container .home-btn {
   width: 13rem;
   height: 13rem;
@@ -587,5 +482,4 @@ a span {
     left: 48.4%; */
 }
 
-/* ------------BTN ENDS------------ */
-/*# sourceMappingURL=destination.css.map */
+/* ------------BTN ENDS------------ *//*# sourceMappingURL=destination.css.map */
