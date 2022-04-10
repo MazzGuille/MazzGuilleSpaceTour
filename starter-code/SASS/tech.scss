@@ -14,16 +14,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  position: relative;
+  
 }
 
 .navagation-container {
     position: fixed;
     top: 0;
-    width: 80%;
-    height: 15vh;
+    min-width: 37.49rem;
+    min-height: 15vh;
     padding: 2rem;
     z-index: 10;
+    
+   
 
     .ham{
         margin: 0;
@@ -59,7 +61,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
+  width: 37.4rem;
   height: 17rem;
   margin-bottom: 3.5rem;
 }
@@ -69,7 +71,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
+  width: 37.4rem;
   height: 17rem;
   margin-bottom: 3.5rem;
 }
@@ -79,7 +81,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
+  width: 37.4rem;
   height: 17rem;
   margin-bottom: 3.5rem;
 }

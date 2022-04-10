@@ -206,20 +206,44 @@ hr {
   opacity: 0.5;
 }
 
-.commander-img-container,
-.specialist-img-container,
-.pilot-img-container,
-.engineer-img-container {
-  width: 80%;
+.commander-img-container {
+  background-image: url(/starter-code/assets/CREW/image-douglas-hurley.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
-  display: grid;
-  place-content: center;
-}
-.commander-img-container img,
-.specialist-img-container img,
-.pilot-img-container img,
-.engineer-img-container img {
   width: 17.712rem;
+  height: 24rem;
+}
+
+.specialist-img-container {
+  background-image: url(/starter-code/assets/CREW/image-mark-shuttleworth.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  width: 17.712rem;
+  height: 26rem;
+}
+
+.pilot-img-container {
+  background-image: url(/starter-code/assets/CREW/image-victor-glover.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  width: 17.712rem;
+  height: 24rem;
+}
+
+.engineer-img-container {
+  background-image: url(/starter-code/assets/CREW/image-anousheh-ansari.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  width: 17.712rem;
+  height: 24rem;
 }
 
 .dot-container-commander,
