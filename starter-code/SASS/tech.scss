@@ -1,0 +1,152 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "functions";
+@import "nav";
+
+/* -------FONTS------- */
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+body {
+  background-image: url(/starter-code/assets/TECHNOLOGY/background-technology-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.navagation-container {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: 15vh;
+    padding: 2rem;
+    z-index: 10;
+
+    .ham{
+        margin: 0;
+    }
+  }
+
+.tech-title {
+  width: auto;
+  margin: auto;
+  color: $light;
+  font-family: $barlow;
+  font-size: $fs-h4;
+  text-align: center;
+  word-spacing: 1.5rem;
+  margin-top: 9.3rem;
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+
+  .nbr-title {
+    opacity: 0.5;
+    letter-spacing: $cs-txt;
+    font-weight: $fw-regular;
+  }
+
+  .txt-title{
+      letter-spacing: $cs-txt;
+      font-weight: $fw-regular;
+  }
+}
+
+.vehicle-img-container {
+  background-image: url(/starter-code/assets/TECHNOLOGY/image-launch-vehicle-landscape.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 17rem;
+  margin-bottom: 3.5rem;
+}
+
+.port-img-container {
+  background-image: url(/starter-code/assets/TECHNOLOGY/image-spaceport-portrait.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 17rem;
+  margin-bottom: 3.5rem;
+}
+
+.capsule-img-container {
+  background-image: url(/starter-code/assets/TECHNOLOGY/image-space-capsule-portrait.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 17rem;
+  margin-bottom: 3.5rem;
+}
+
+.vehicle-inner-nav-ul, .port-inner-nav-ul, .capsule-inner-nav-ul {
+  @include flex-center(row, 1rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-radius: 50%;
+    border: 0.1rem solid $light;
+    width: 4rem;
+    height: 4rem;
+    @include flex-center(row, null);
+    color: $light;
+    font-size: $fs-h4;
+    margin-bottom: 3rem;
+    font-weight: $fw-regular;
+  }
+
+  .vehicle-one:hover, .port-one:hover, .capsule-one:hover,
+  .vehicle-two:hover, .port-two:hover, .capsule-two:hover,
+  .vehicle-three:hover, .port-three:hover, .capsule-three:hover {
+    cursor: pointer;
+    background-color: $light;
+    color: $dark;
+  }
+  .vehicle-one:focus, .port-one:focus, .capsule-one:focus,
+  .vehicle-two:focus, .port-two:focus, .capsule-two:focus,
+  .vehicle-three:focus ,.port-three:focus, .capsule-three:focus {
+    background-color: $light;
+    color: $dark;
+  }
+}
+
+.vehicle-main, .port-main, .capsule-main {
+    width: 100%;
+    margin: auto;
+    color: $light;
+    text-align: center;
+
+    .vehicle-sub1, .port-sub1, .capsule-sub1 {
+        font-size: $fs-subhead-2;
+        text-transform: uppercase;
+        letter-spacing: $cs-sh-2;
+        font-family: $barlow;
+        font-weight: $fw-regular;
+    }
+
+    .vehicle-title, .port-title, .capsule-title {
+        font-size: $fs-h3;
+        text-transform: uppercase;
+        font-family: $bellefair;
+        font-weight: $fw-regular;        
+    }
+}
+
+.vehicle-txt, .port-txt, .capsule-txt {
+    width: 32.7rem;
+    height: 15rem;
+    margin: auto;
+    color: $light;
+    text-align:center;
+    font-size: $fs-body;
+    font-family: $barlow;
+    font-weight: $fw-regular;
+    line-height: 2.5rem;
+}
