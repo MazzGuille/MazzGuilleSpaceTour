@@ -103,6 +103,8 @@ select {
   align-items: center;
   flex-direction: row;
   gap: 1.5rem;
+  position: fixed;
+  min-width: 100%;
 }
 
 .menu-container {
@@ -141,6 +143,152 @@ select {
   display: none;
 }
 
+/* ------------------MEDIA QUERY----------------- */
+@media (min-width: 768px) {
+  .ham {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .ham {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 4.8rem;
+    width: 4.8rem;
+    position: fixed;
+    z-index: 100;
+  }
+}
+@media (min-width: 1440px) {
+  .logo {
+    height: 4.8rem;
+    width: 4.8rem;
+    z-index: 100;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-mobile {
+    margin-top: 0.5rem;
+    margin-left: 3.9rem;
+    height: 4.8rem;
+    position: relative !important;
+  }
+}
+@media (min-width: 1440px) {
+  .header-mobile {
+    margin-top: 6.4rem;
+    margin-left: 5.5rem;
+    height: 9.6rem;
+    position: relative !important;
+  }
+}
+
+@media (min-width: 0) {
+  .nav-txt {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .nav-txt {
+    display: grid;
+    place-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+    background-color: #151923;
+    width: 60%;
+    height: 9.6rem;
+    z-index: 100;
+  }
+}
+@media (min-width: 1440px) {
+  .nav-txt {
+    display: none;
+  }
+}
+
+@media (min-width: 0) {
+  .nav-txt-dsk {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .nav-txt-dsk {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .nav-txt-dsk {
+    display: grid;
+    place-content: center;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    font-size: 1.6rem;
+    width: 60%;
+    min-height: 9.6rem;
+    background-image: linear-gradient(to right, rgba(21, 25, 35, 0.94), rgba(67, 72, 90, 0.94), rgba(21, 25, 35, 0.94));
+    z-index: 100;
+  }
+}
+
+@media (min-width: 0) {
+  .nav-txt-container {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .nav-txt-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 4rem;
+    font-size: 1.4rem;
+    list-style: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.236rem;
+  }
+}
+@media (min-width: 1440px) {
+  .nav-txt-container {
+    display: none;
+  }
+}
+
+@media (min-width: 0) {
+  .nav-txt-container-dsk {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .nav-txt-container-dsk {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .nav-txt-container-dsk {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 7rem;
+    font-size: 1.6rem;
+    list-style: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.27rem;
+    min-width: 45rem !important;
+  }
+}
+
 /* -------FONTS------- */
 body {
   background-image: url(/starter-code/assets/TECHNOLOGY/background-technology-mobile.jpg);
@@ -153,7 +301,7 @@ body {
 .navagation-container {
   position: fixed;
   top: 0;
-  min-width: 37.49rem;
+  width: 80%;
   min-height: 15vh;
   padding: 2rem;
   z-index: 10;
@@ -189,7 +337,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 37.4rem;
+  width: 100%;
   height: 17rem;
   margin-bottom: 3.5rem;
 }
@@ -199,7 +347,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 37.4rem;
+  width: 100%;
   height: 17rem;
   margin-bottom: 3.5rem;
 }
@@ -209,7 +357,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 37.4rem;
+  width: 100%;
   height: 17rem;
   margin-bottom: 3.5rem;
 }

@@ -7,6 +7,8 @@
   
   .header-mobile {
     @include flex-between(row, 1.5rem);
+    position: fixed;
+    min-width: 100%;
   }
   
   .menu-container {
@@ -38,4 +40,173 @@
   /* ---------HIDE NAV------ */
   .hide {
     display: none;
+  }
+
+
+  $breakpoints: (
+    "xs": 0,
+    "md": 768px,
+    "lg": 1440px,
+  );
+  
+  /* ------------------MEDIA QUERY----------------- */
+  @mixin xs {
+    @media (min-width: map-get($breakpoints, "xs")) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media (min-width: map-get($breakpoints, "md")) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media (min-width: map-get($breakpoints, "lg")) {
+      @content;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  .ham {
+    @include md {
+      display: none;
+    }
+  
+    @include lg {
+      display: none;
+    }
+  }
+  
+  .logo {
+    @include md {
+      height: 4.8rem;
+      width: 4.8rem;
+      position: fixed;
+      z-index: 100;
+    }
+  
+    @include lg {
+      height: 4.8rem;
+      width: 4.8rem;
+      z-index: 100;
+    }
+  }
+  
+  .header-mobile {
+    @include md {
+      margin-top: .5rem;
+      margin-left: 3.9rem;
+      height: 4.8rem;
+      position: relative !important;
+  
+    }
+  
+    @include lg {
+      margin-top: 6.4rem;
+      margin-left: 5.5rem;
+      height: 9.6rem;
+      position: relative !important;
+      
+    }
+  }
+  
+  .nav-txt {
+    @include xs {
+      display: none;
+    }
+  
+    @include md {
+      display: grid;
+      place-content: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      font-size: $fs-tbl-nav;
+      background-color: #151923;
+      width: 60%;
+      height: 9.6rem;
+      z-index: 100;
+    }
+  
+    @include lg {
+      display: none;
+    }
+  }
+  
+    .nav-txt-dsk{
+      @include xs {
+        display: none;
+      }
+    
+      @include md {
+        display: none;
+      }
+    
+      @include lg {
+        display: grid;
+        place-content: center;
+        position: fixed;
+        top: 10%;
+        right: 0;
+        font-size: $fs-dsk-nav;
+        width: 60%;
+        min-height: 9.6rem;
+        background-image: linear-gradient(to right, rgba(21,25,35,.94), rgba(67,72,90,.94), rgba(21,25,35,.94));
+        z-index: 100;
+        
+      }
+    
+  }
+  
+  .nav-txt-container{
+    @include xs {
+      display: none;
+    }
+  
+    @include md {
+      @include flex-end-x(row, 4rem);
+      font-size: $fs-tbl-nav;
+      list-style: none;
+      font-family: $barlow;
+      font-weight: $fw-regular;
+      letter-spacing: $cs-tbl-sh-2
+      
+    }
+  
+    @include lg {
+      display: none;
+      
+    }
+  }
+  
+  .nav-txt-container-dsk{
+    @include xs {
+      display: none;
+    }
+  
+    @include md {
+      display: none;
+      
+    }
+  
+    @include lg {
+      @include flex-end-x(row, 7rem);
+      font-size: $fs-dsk-nav;
+      list-style: none;
+      font-family: $barlow;
+      font-weight: $fw-regular;
+      letter-spacing: $cs-dsk-txt;
+      min-width: 45rem !important;
+      
+    }
   }
