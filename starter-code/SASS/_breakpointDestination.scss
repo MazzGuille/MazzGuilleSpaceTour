@@ -1,0 +1,178 @@
+$breakpoints: (
+  "xs": 0,
+  "md": 768px,
+  "lg": 1440px,
+);
+
+/* ------------------MEDIA QUERY----------------- */
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+body {
+  @include md {
+    background-image: url(/starter-code/assets/DESTINATION/background-destination-tablet.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  @include lg {
+    background-image: url(/starter-code/assets/DESTINATION/background-destination-desktop.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 360rem;
+  }
+}
+
+.moon,
+.mars,
+.europa,
+.titan{
+    @include lg {
+        margin-top: 7% !important;
+    }
+}
+
+.moon-top,
+.mars-top,
+.europa-top,
+.titan-top {
+  @include md {
+    width: 85% !important;
+    
+  }
+
+  @include lg {
+    border-bottom: 0px !important;
+    position: relative;
+
+  }
+}
+
+.hr-dsk{
+    @include xs {
+        display: none !important;
+        
+      }
+
+    @include md {
+        display: none !important;
+        
+      }
+    
+      @include lg {
+          display: block !important;
+        width: 32% !important;
+        opacity: 0.3 !important;
+        margin-right: 12.5rem;
+      }
+}
+.moon-heading {
+  @include md {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    font-size: $fs-tbl-h5 !important;
+  }
+
+  @include lg {
+    font-size: $fs-dsk-h5;
+    letter-spacing: $cs-dsk-h5;
+  }
+}
+
+.moon-img,
+.mars-img,
+.europa-img,
+.titan-img {
+    @include lg {
+        display: grid;
+        place-content: start;
+        margin-left: -55rem;
+        margin-top: 5rem;
+        
+}
+}
+
+.dest-current-position {
+  @include md {
+    font-size: $fs-tbl-body !important;
+    justify-content: center !important;
+    gap: 3.7rem !important;
+    letter-spacing: $cs-tbl-txt !important;
+  }
+
+  @include lg {
+      width: 50% !important;
+      margin-top: -50rem !important;
+      margin-right: -60rem;
+   
+  }
+}
+
+.moon-title,
+.mars-title,
+.europa-title,
+.titan-title {
+  @include md {
+    font-size: $fs-tbl-h2 !important;
+  }
+
+  @include lg {
+    font-size: $fs-dsk-h2 !important;
+    margin-right: -60rem;
+  }
+}
+
+.moon-txt,
+.mars-txt,
+.europa-txt,
+.titan-txt {
+  @include md {
+    font-size: $fs-tbl-body !important;
+    line-height: 2.8rem !important;
+  }
+
+  @include lg {
+    font-size: $fs-dsk-body !important;
+    line-height: 3.2rem !important;
+    width: 35% !important;
+    text-align: justify !important;
+    margin-top: -2.5rem !important;
+    margin-right: -70rem;
+  }
+}
+
+.moon-bot,
+.mars-bot,
+.europa-bot,
+.titan-bot {
+  @include md {
+    flex-direction: row !important;
+  }
+
+  @include lg {
+      width: 35% !important;
+      margin-right: -68rem;
+  }
+}

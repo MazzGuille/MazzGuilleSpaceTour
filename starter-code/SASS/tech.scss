@@ -14,23 +14,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  padding: 1.5rem;
   
 }
-
-.navagation-container {
-    position: fixed;
-    top: 0;
-    width: 80%;
-    min-height: 15vh;
-    padding: 2rem;
-    z-index: 10;
     
-   
-
-    .ham{
-        margin: 0;
-    }
-  }
 
 .tech-title {
   width: auto;

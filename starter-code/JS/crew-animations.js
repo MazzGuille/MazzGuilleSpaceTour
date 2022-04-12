@@ -17,8 +17,6 @@ const specialist = gsap.timeline(
     scrollTrigger: {
         trigger: '.specialist-img-container',
         start: 'top, center',
-        endTrigger: '.moon-time',
-        end: 'bottom, top',
         toggleActions: "restart",
     }
 });
