@@ -295,6 +295,43 @@ select {
   }
 }
 
+/* ------------------MEDIA QUERY----------------- */
+@media (min-width: 768px) {
+  body {
+    background-image: url(/starter-code/assets/TECHNOLOGY/background-technology-tablet.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    background-image: url(/starter-code/assets/TECHNOLOGY/background-technology-desktop.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 768px) {
+  .tech-title {
+    font-size: 2rem !important;
+    letter-spacing: 0.338rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .vehicle-img-container {
+    width: 100% !important;
+    height: 31rem !important;
+    background-image: url(/starter-code/assets/TECHNOLOGY/image-launch-vehicle-landscape.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 /* -------FONTS------- */
 body {
   background-image: url(/starter-code/assets/TECHNOLOGY/background-technology-mobile.jpg);
@@ -328,7 +365,7 @@ body {
 }
 
 .vehicle-img-container {
-  background-image: url(/starter-code/assets/TECHNOLOGY/image-launch-vehicle-landscape.jpg);
+  background-image: url(/starter-code/assets/TECHNOLOGY/image-launch-vehicle-portrait.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

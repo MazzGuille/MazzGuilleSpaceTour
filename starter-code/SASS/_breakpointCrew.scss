@@ -1,0 +1,216 @@
+$breakpoints: (
+  "xs": 0,
+  "md": 768px,
+  "lg": 1440px,
+);
+
+/* ------------------MEDIA QUERY----------------- */
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+/* ------------------MEDIA QUERY----------------- */
+
+body {
+  @include md {
+    background-image: url(/starter-code/assets/CREW/background-crew-tablet.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+  }
+
+  @include lg {
+    background-image: url(/starter-code/assets/CREW/background-crew-desktop.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+.commander-container,
+.specialist-container,
+.pilot-container,
+.engineer-container {
+  @include md {
+    display: grid !important;
+    grid-template-areas:
+      "crew-title ... ..."
+      "... name-title-container-commander ..."
+      "... commander-txt ..."
+      "... dot-container-commander ..."
+      "... commander-img-container ...";
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include lg {
+    display: grid !important;
+    grid-template-areas:
+      "crew-title commander-img-container"
+      "name-title-container-commander commander-img-container"
+      "commander-txt commander-img-container"
+      "dot-container-commander commander-img-container"
+      "... commander-img-container";
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0 !important;
+  }
+}
+
+.crew-title,
+.specialist-title,
+.pilot-title,
+.engineer-title {
+  @include md {
+    grid-area: crew-title;
+    font-size: $fs-tbl-h5 !important;
+    letter-spacing: $cs-tbl-h5 !important;
+    margin-left: -4%;
+  }
+
+  @include lg {
+    grid-area: crew-title;
+    font-size: $fs-dsk-h5 !important;
+    letter-spacing: $cs-dsk-h5 !important;
+  }
+}
+
+.name-title-container-commander,
+.name-title-container-specialist,
+.name-title-container-pilot,
+.name-title-container-engineer {
+  @include md {
+    grid-area: name-title-container-commander;
+  }
+
+  @include lg {
+    grid-area: name-title-container-commander;
+    margin-top: 12.5% !important;
+  }
+}
+
+.commander-title,
+.specialist-title,
+.pilot-title,
+.engineer-title {
+  @include md {
+    font-size: $fs-tbl-h4 !important;
+    width: 48%
+    }
+
+  @include lg {
+    font-size: $fs-dsk-h4 !important;
+    text-align: left;
+  }
+}
+
+.commander-name,
+.specialist-name,
+.pilot-name,
+.engineer-name {
+  @include md {
+    font-size: $fs-tbl-h3 !important;
+  }
+  @include lg {
+    font-size: $fs-dsk-h3 !important;
+    font-weight: $fw-regular !important;
+  }
+}
+
+.commander-txt,
+.specialist-txt,
+.pilot-txt,
+.engineer-txt {
+  @include md {
+    grid-area: commander-txt;
+    font-size: $fs-tbl-body !important;
+    line-height: 2.8rem !important;
+  }
+
+  @include lg {
+    grid-area: commander-txt;
+    width: 50% !important;
+    margin-left: 27% !important;
+    margin-top: 5.6rem;
+
+    p {
+      font-size: $fs-dsk-body !important;
+      line-height: 3.2rem !important;
+      text-align: left !important;
+    }
+  }
+}
+
+.dot-container-commander,
+.dot-container-specialist,
+.dot-container-pilot,
+.dot-container-engineer {
+  @include md {
+    grid-area: dot-container-commander;
+    width: 100% !important;
+
+    ul {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-around !important;
+      width: 100% !important;
+    }
+  }
+
+  @include lg {
+    grid-area: dot-container-commander;
+    margin-top: 9rem !important;
+
+    ul {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      gap: 2rem !important;
+      width: 45% !important;
+      li {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+      }
+    }
+  }
+}
+
+.commander-img-container,
+.specialist-img-container,
+.pilot-img-container,
+.engineer-img-container {
+  @include md {
+    grid-area: commander-img-container;
+    width: 30rem !important;
+    height: 43rem !important;
+  }
+
+  @include lg {
+    grid-area: commander-img-container;
+    width: 55rem !important;
+    height: 75rem !important;
+    margin-bottom: 0rem;
+  }
+}

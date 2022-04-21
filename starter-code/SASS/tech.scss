@@ -3,6 +3,7 @@
 @import "mixins";
 @import "functions";
 @import "nav";
+@import "breakpointTech";
 
 /* -------FONTS------- */
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
@@ -44,7 +45,7 @@ body {
 }
 
 .vehicle-img-container {
-  background-image: url(/starter-code/assets/TECHNOLOGY/image-launch-vehicle-landscape.jpg);
+  background-image: url(/starter-code/assets/TECHNOLOGY/image-launch-vehicle-portrait.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

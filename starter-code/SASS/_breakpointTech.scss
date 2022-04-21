@@ -1,0 +1,160 @@
+$breakpoints: (
+  "xs": 0,
+  "md": 768px,
+  "lg": 1440px,
+);
+
+/* ------------------MEDIA QUERY----------------- */
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+body {
+  @include md {
+    background-image: url(/starter-code/assets/TECHNOLOGY/background-technology-tablet.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+  }
+
+  @include lg {
+    background-image: url(/starter-code/assets/TECHNOLOGY/background-technology-desktop.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+
+.tech-title {
+  @include md {
+  font-size: $fs-tbl-h5 !important;
+  letter-spacing: $cs-tbl-h5 !important;
+  }
+
+  @include lg {
+  
+  }
+}
+
+.vehicle-img-container {
+  @include md {
+  width: 100% !important;
+  height: 31rem !important;
+  background-image: url(/starter-code/assets/TECHNOLOGY/image-launch-vehicle-landscape.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  }
+
+  @include lg {
+  
+  }
+}
+
+body {
+  @include md {
+  
+  }
+
+  @include lg {
+  
+  }
+}
+
+body {
+  @include md {
+  
+  }
+
+  @include lg {
+  
+  }
+}
+
+body {
+  @include md {
+  
+  }
+
+  @include lg {
+  
+  }
+}
+body {
+  @include md {
+  
+  }
+
+  @include lg {
+  
+  }
+}
+
+body {
+  @include md {
+  
+  }
+
+  @include lg {
+  
+  }
+}
+
+body {
+  @include md {
+  
+  }
+
+  @include lg {
+  
+  }
+}
+
+body {
+  @include md {
+  
+  }
+
+  @include lg {
+  
+  }
+}
+
+body {
+  @include md {
+  
+  }
+
+  @include lg {
+  
+  }
+}
+
+body {
+  @include md {
+  
+  }
+
+  @include lg {
+  
+  }
+}
